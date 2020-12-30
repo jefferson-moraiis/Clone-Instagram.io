@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width:50%;
+    height: 100%vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:60%;
+}
+.instagram-phone img {
+    height: 35rem;
+}
+
+.instagram-singin {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    width:60%;
+    min-height: 3.4rem;
+}
+
+.group {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color:#ffffff;
+    width:100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+.instagram-logo {
+    height: 3rem;
+
+}
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height:6rem ;
+}
+
+.instagram-login {
+    background-color:#0095f6;
+    color:#ffffff;
+    padding:8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color:#0095f6;
+    margin-top:1rem;
+}
+
+.not-account {
+    color: rgb(145, 140, 140)
+}
+
+.link-blue {
+    color:#0095f6;
+}
+.get-the-app {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding:1.3rem 0;
+}
+.donwload {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-donwload {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-donwload:nth-child(1){
+    background-image: url(./img/logoios.png);
+}
+.app-donwload:nth-child(2){
+    background-image: url(./img/logoGoogle.png);
+}
+
+/*----------------medias queires -----------------------*/
+
+
+@media (max-width:1024px) {
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width:640px) {
+    body{
+        background-color:#ffffff;
+    }
+    
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-singin {
+        width: 100%;
+    }
+    .group{
+        border: 1px solid transparent;
+    }
+}
+
+
